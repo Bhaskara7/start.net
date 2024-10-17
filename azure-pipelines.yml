@@ -8,8 +8,8 @@ trigger:
 
 pool:
   name: 'Test'
-  demands:
-    - agent.os -equals windows_NT
+  specs:
+    - osType: 'windows'
 
 variables:
   buildConfiguration: 'Release'
