@@ -17,3 +17,6 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+
+- script: dotnet run
+  displayName: 'Run the .NET webapp'
